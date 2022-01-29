@@ -90,10 +90,11 @@
 
 .about__btn {
   display: block;
-
+  position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
+  padding: 9px 50px 9px 35px;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -140,4 +141,15 @@
     display: flex;
     align-items: flex-start;
   }
+}
+
+.about__svg {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+
+  fill: currentColor;
+  width: 10px;
+  height: 10px;
 }
