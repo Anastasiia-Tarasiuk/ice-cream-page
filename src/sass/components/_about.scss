@@ -73,18 +73,6 @@
   }
 }
 
-.about__container {
-  max-width: 320px;
-  margin: 0 auto;
-
-  @media screen and (min-width: 768px) {
-    max-width: 772px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-  }
-}
-
 .about__btn {
   display: block;
   position: relative;
@@ -135,6 +123,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
   }
 }
 
