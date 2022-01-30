@@ -1,19 +1,13 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-<<<<<<< Updated upstream
-// Сбрасывает глобальные стили
-=======
 // Глобальные стили
->>>>>>> Stashed changes
 @import './base/reset';
 
 // Переменные в css формате
 @import './utils/variables';
 @import './utils/mixins';
+@import './base/base';
 
 // Стили для файла с примером HTML-фрагмента
+@import './components/button';
 @import './components/header';
 @import './components/hero';
 @import './components/products';
