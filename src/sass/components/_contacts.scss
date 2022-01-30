@@ -32,7 +32,6 @@
         padding-bottom: 50px;
         padding-left: 31px;
         height: 544px;
-        max-width: 220px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -214,6 +213,7 @@ li {
     border: 1px solid $review-underline;
     /* надо разобраться */
     width: 1px;
+    transform: rotate(90deg);
 }
 .card__contacts {
     font-family: DM Sans;
