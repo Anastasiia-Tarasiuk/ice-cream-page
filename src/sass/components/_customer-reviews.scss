@@ -1,6 +1,10 @@
 .reviews {
   @include section-padding(40px, 40px);
   background-color: #fff;
+
+  @media screen and (min-width: 768px) {
+    @include section-padding(120px, 120px);
+  }
 }
 
 .reviews__picture {
@@ -8,9 +12,10 @@
 }
 
 .reviews__comment {
+  position: relative;
   font-size: 12px;
   line-height: 2.55;
-
+  z-index: 30;
   text-align: center;
   letter-spacing: 0.04em;
 
@@ -46,41 +51,69 @@
   position: relative;
   padding: 40px 50px 20px;
   background-color: $review-color;
-  margin: 0 auto;
+  margin: 0 auto 52px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 42px;
+  }
 
   @media screen and (min-width: 1280px) {
     max-width: 962px;
     padding: 40px 54px 20px;
+    margin-bottom: 34px;
   }
 
-  //   &:before {
-  //     content: url('../images/icons.svg#icon-quotes');
-  //     display: block;
+  &:before {
+    content: '';
+    display: block;
 
-  //       background-image: url('../images/icons.svg#icon-quotes');
-  //     width: 54px;
-  //     height: 40px;
-  //     background-color: rgb(255, 0, 0);
-  //     background-size: contain;
+    background-image: url(../images/quotes.png);
+    width: 54px;
+    height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  //     position: absolute;
-  //     top: 28px;
-  //     left: 61px;
-  //     transform: translate(-50%, -50%);
-  // }
-//   &:after {
-//     content: '. . .';
-//     color: violet;
-//     font-size: 50px;
-//     display: block;
-//     position: absolute;
-//     bottom: -55px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     width: 30px;
-//     height: 15px;
-//     background-image: url('../images/icons.svg#icon-productspoints');
-//   }
+    position: absolute;
+    top: 28px;
+    left: 61px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/quotes@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 30px;
+      left: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: 32px;
+      left: 50px;
+    }
+  }
+
+  &:after {
+    content: '. . .';
+    color: $second-hover-color;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    @media screen and (min-width: 768px) {
+      bottom: -24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: -15px;
+    }
+  }
 }
 
 .reviews__info {
