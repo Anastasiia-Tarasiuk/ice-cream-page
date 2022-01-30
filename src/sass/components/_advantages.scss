@@ -52,12 +52,19 @@
 .advantages__text {
   font-family: DM Sans;
   font-style: normal;
-  font-size: 12px;
+  font-weight: bold;
+  font-size: 16px;
   line-height: 1.66;
   color: $main-text-color;
   font-weight: bold;
+  letter-spacing: 0.04em;
+  width: 330px;
+  height: 52px;
 }
 
 .advantages__item {
   margin-bottom: 65px;
+}
+.advantages__item:not(:last-child) {
+  margin-right: 30px;
 }
