@@ -1,0 +1,239 @@
+.contacts {
+    background-color: $background-color;
+
+}
+.card__container {
+    @media screen and (max-width: 767px) {
+        display: block;
+     
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+     background-image: url(../images/contactsbg.png);
+     display: flex;
+     justify-content: center;
+     background-repeat: no-repeat;
+    }
+
+}
+.card {
+    border-radius: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 50px;
+        padding-right: 32px;
+        padding-bottom: 50px;
+        padding-left: 31px;
+        height: 544px;
+        max-width: 220px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 51px;
+        padding-right: 44px;
+        padding-bottom: 62px;
+        padding-left: 43px;
+        margin-right: 31px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+       }
+       @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+        padding-top: 43px;
+        padding-right: 21px;
+        padding-bottom: 43px;
+        padding-left: 20px;
+        height: 427px;
+        width: 220px; 
+        margin-right: auto;
+        margin-left: auto;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+li {
+    list-style-type: none;
+}
+
+.card__title {
+    font-family: DM Sans;
+    background-color: $second-background-color;
+    border-radius: 6px;
+    color: $third-text-color;
+    width: 73px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+
+}
+.card__title--middle {
+    font-family: DM Sans;
+    width: 138px;
+    background-color: $third-background-color;
+    color: $third-text-color;
+    text-align: center;
+    border-radius: 6px;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+
+}
+.card__name {
+    font-family: DM Sans;
+    color: $main-text-color;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.83;
+        letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.85;
+        letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1200px) {
+        letter-spacing: 0.04em;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.87;
+    }
+}
+.card__text {
+    font-family: DM Sans;
+    font-style: normal;
+    color: $second-text-color;
+    width: 243px;
+
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        width: 179px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.64;
+        width: 145px;
+    }
+    @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.81;
+
+    }
+}
+.card__day {
+    margin-bottom: -2px;
+    font-family: DM Sans;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $main-text-color;
+
+    @media screen and (max-width: 767px) {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.83;
+        
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.85;
+        
+    }
+}
+.card__schedule {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $third-accent-color;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.85;
+    
+    }
+}
+.card__line {
+    border: 1px solid $review-underline;
+    /* надо разобраться */
+    width: 1px;
+}
+.card__contacts {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.81;
+    color: $second-text-color;
+    margin-top: 32px;
+
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        font-family: DM Sans;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.85;
+    }
+}
+
