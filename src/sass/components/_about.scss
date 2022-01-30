@@ -1,0 +1,139 @@
+.about {
+  @include section-padding(40px, 40px);
+  background-color: $background-color;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/milk_mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 100px right 0;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk@2x_mobile.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/milk_desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: bottom;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk@2x_desktop.png');
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 106px;
+  }
+}
+
+.about__text {
+  margin-bottom: 36px;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.about__text--lighter {
+  margin-bottom: 20px;
+
+  color: $second-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.94;
+  }
+
+  &:last-of-type {
+    margin-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 62px;
+    }
+  }
+}
+
+.about__btn {
+  display: block;
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 9px 50px 9px 35px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.about__text-block {
+  max-width: 220px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 463px;
+    margin: 0;
+  }
+}
+
+.about__picture {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto 46px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+    margin-top: -50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 74px;
+  }
+}
+
+.about__box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.about__svg {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+
+  fill: currentColor;
+  width: 10px;
+  height: 10px;
+}
