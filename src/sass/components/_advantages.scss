@@ -1,56 +1,63 @@
+.advantages__section {
+  background-color: $background-color;
+}
+
 .advantages {
-  background: $background-color;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 60px;
+  flex-direction: row;
+  padding-top: 39px;
+  padding-bottom: 97px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
 }
-.section__title--hiden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
+
+.advantages__icon1::before {
+  content: url(../images/advant1.png);
+  position: relative;
+  width: 33px;
+  height: 50px;
+  bottom: 16px;
 }
+
+.advantages__icon2::before {
+  content: url(../images/advant2.png);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  bottom: 16px;
+}
+
+.advantages__icon3::before {
+  content: url(../images/advant3.png);
+  position: relative;
+  width: 44px;
+  height: 50px;
+  bottom: 16px;
+}
+
 .advantages__title {
-  font-family: Titan One;
   color: $accent-color;
-  font-weight: normal;
-  font-size: 58px;
+  font-family: Titan One;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.13;
   letter-spacing: 0.04em;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
+  padding-bottom: 15px;
 }
 
 .advantages__text {
   font-family: DM Sans;
-  color: #000000;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  width: 330px;
-  height: 52px;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.66;
+  color: $main-text-color;
+  font-weight: bold;
 }
-.advantages__item:not(:last-child) {
-  margin-right: 30px;
+
+.advantages__item {
+  margin-bottom: 65px;
 }
