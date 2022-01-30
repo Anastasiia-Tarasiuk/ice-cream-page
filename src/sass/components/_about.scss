@@ -33,18 +33,17 @@
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 100px;
+    margin-bottom: 106px;
   }
 }
 
 .about__text {
-  margin: 0 auto 36px;
+  margin-bottom: 36px;
   color: $main-text-color;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.76;
-    margin: 0 0 36px auto;
   }
 
   @media screen and (min-width: 1280px) {
@@ -53,14 +52,12 @@
 }
 
 .about__text--lighter {
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
 
   color: $second-text-color;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.76;
-    margin: 0 0 20px auto;
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -93,12 +90,10 @@
   position: relative;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.29;
   padding: 9px 50px 9px 35px;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    line-height: 1.31;
   }
 
   &:hover {
