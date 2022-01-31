@@ -84,7 +84,8 @@
 .modal__close {
   position: absolute;
   right: 10px;
-  top: 0;
+  top: -8px;
+  right: -8px;
   background: #c2e297;
   width: 25px;
   height: 25px;
