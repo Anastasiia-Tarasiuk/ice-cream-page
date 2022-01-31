@@ -1,0 +1,135 @@
+.reviews {
+  @include section-padding(40px, 40px);
+  background-color: #fff;
+
+  @media screen and (min-width: 768px) {
+    @include section-padding(120px, 120px);
+  }
+}
+
+.reviews__picture {
+  margin: 0 auto 15px;
+}
+
+.reviews__comment {
+  position: relative;
+  font-size: 12px;
+  line-height: 2.55;
+  z-index: 30;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  padding: 7px 16px;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    $review-underline 31px,
+    $review-underline 32px
+  );
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.16;
+    padding: 7px 20px;
+
+    background: repeating-linear-gradient(
+      transparent -1px,
+      transparent 30px,
+      $review-underline 30px,
+      $review-underline 31px
+    );
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 7px 35px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.slide {
+  position: relative;
+  padding: 40px 50px 20px;
+  background-color: $review-color;
+  margin: 0 auto 52px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 42px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 962px;
+    padding: 40px 54px 20px;
+    margin-bottom: 34px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+
+    background-image: url(../images/quotes.png);
+    width: 54px;
+    height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 28px;
+    left: 61px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/quotes@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 30px;
+      left: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: 32px;
+      left: 50px;
+    }
+  }
+
+  &:after {
+    content: '. . .';
+    color: $second-hover-color;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    @media screen and (min-width: 768px) {
+      bottom: -24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: -15px;
+    }
+  }
+}
+
+.reviews__info {
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__pagination {
+  display: block;
+  width: 72px;
+  height: 12px;
+  margin: 0 auto;
+}
