@@ -4,9 +4,12 @@
 
   padding-top: 6px;
   position: relative;
+  margin-bottom: -56px;
+  z-index: 3;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
       padding-top: 37px;
+      margin-bottom: -87px;
   }
 }
 
