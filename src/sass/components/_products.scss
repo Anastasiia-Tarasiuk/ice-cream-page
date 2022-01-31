@@ -84,6 +84,7 @@
   margin-bottom: 130px;
   border-radius: 24px;
   min-height: 485px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and(min-width:768px) {
     margin: 10px;
@@ -100,15 +101,35 @@
 
   &--ice-cream {
     background-color: #ffb8ca;
+    &:hover {
+      box-shadow: -4px 4px 43px 0px rgba(244, 112, 195, 0.75);
+      -webkit-box-shadow: -4px 4px 43px 0px rgba(244, 112, 195, 0.75);
+      -moz-box-shadow: -4px 4px 43px 0px rgba(244, 112, 195, 0.75);
+    }
   }
   &--ice-coffee {
     background-color: #f0d1a5;
+    &:hover {
+      box-shadow: -4px 4px 43px 0px rgba(158, 158, 16, 0.75);
+      -webkit-box-shadow: -4px 4px 43px 0px rgba(158, 158, 16, 0.75);
+      -moz-box-shadow: -4px 4px 43px 0px rgba(158, 158, 16, 0.75);
+    }
   }
   &--milkshakes {
     background-color: #c2e297;
+    &:hover {
+      box-shadow: -4px 4px 43px 0px rgba(7, 150, 20, 0.75);
+      -webkit-box-shadow: -4px 4px 43px 0px rgba(7, 150, 20, 0.75);
+      -moz-box-shadow: -4px 4px 43px 0px rgba(7, 150, 20, 0.75);
+    }
     @media screen and(max-width:767px) {
       margin-bottom: 0;
     }
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-15px);
   }
 }
 
@@ -342,7 +363,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-
   margin-bottom: 41px;
   background-color: transparent;
   border-color: transparent;
