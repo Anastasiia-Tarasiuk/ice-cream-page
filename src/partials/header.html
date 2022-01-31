@@ -1,81 +1,51 @@
 <header>
-    <div class="header--container">
+    <div class="container header__container">
 
-        <p class="header__logo"> <a href="/index.html" >
-                <!-- <img src="./images/logo.png" alt="logo-icecream"> -->
-                    <picture>
-                        <source srcset="./images/logo-desktopx1.png 1x,
-                           ./images/logo-desktopx2.png 2x" media="(min-width: 1280px)" />
-                                <source srcset="./images/logo-tabletx1.png 1x,
-                                  ./images/logo-tabletx2.png 2x"
-                                    media="(min-width: 768px)" />
-                                   <source srcset="./images/logo-mobx1.png 1x,
-                            ./images/logo-mobx2.png 2x" media="(min-width: 480px)" />
-                        <img src="./images/logo.png" alt="logo-icecream">
-                    </picture>
-            </a></p>
-            
-        <ul class="header__navigation">
-            <li class="header__navigation-item">
-                <a class="header__navigation-link current current-acent" href="#">
-                    Home</a>
-            </li>
-            <li class="header__navigation-item">
-                <a class="header__navigation-link"  href="#About">About us</a>
-            </li>
-            <li class="header__navigation-item">
-                <a class="header__navigation-link"  href="#How">How it’s made?</a>
-            </li>
-            <li class="header__navigation-item">
-                <a class="header__navigation-link"  href="#products">Our products</a>
-            </li>
-            <li class="header__navigation-item">
-                <a class="header__navigation-link"  href="#сontact">Contact</a>
-            </li>
-        </ul> 
+        <a href="/index.html" >
+            <picture>
+                <source srcset="./images/logo-desktopx1.png 1x,
+                    ./images/logo-desktopx2.png 2x" media="(min-width: 1280px)" />
+                <source srcset="./images/logo-tabletx1.png 1x,
+                    ./images/logo-tabletx2.png 2x" media="(min-width: 768px)" />
+                <source srcset="./images/logo-mobx1.png 1x,
+                    ./images/logo-mobx2.png 2x" media="(max-width: 767px)" />
+                <img class="header__logo" src="./images/logo-mobx1.png" alt="logo-icecream">
+            </picture>
+        </a>
+           
+        <div class="mob-menu" id="mob-menu" data-menu>
+            <ul class="header__mob-menu-list">
+                <li class="header__mob-menu-item">
+                    <a class="header__mob-menu-link current">Home</a>
+                </li>
+                <li class="header__mob-menu-item">
+                    <a class="header__mob-menu-link ">About us</a>
+                </li>
+                <li class="header__mob-menu-item">
+                    <a class="header__mob-menu-link">How it’s made?</a>
+                </li>
+                <li class="header__mob-menu-item">
+                    <a class="header__mob-menu-link">Our products</a>
+                </li>
+                <li class="header__mob-menu-item">
+                    <a class="header__mob-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>  
         
-<div class="header__buttoms">
-        <button class="open-menu-btn"> <svg width="20" height="22">
-            <use href="./images/icons.svg#icon-Burger"></use>
-        </svg>
+        <button class="burger-button" type="button" data-menu-button aria-expanded="false" aria-controls="mob-menu"> 
+            <svg width="20" height="22">
+                <use class="open-menu-btn" href="./images/icons.svg#icon-burger"></use>
+                <use class="close-menu-btn" href="./images/icons.svg#icon-close"></use>
+            </svg>
         </button>
-        <button type="button" class="header__button">Buy now 
-        <svg class="header__button-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-redvector"></use>
-        </svg>
+        
+        <button type="button" class="button--reverse header__button-mob">Buy now
+             <svg class="header__botton-mob-icon" width="6" height="8">
+                 <use href="./images/icons.svg#icon-redvector"></use>
+             </svg>
         </button>
-    </div>
-    </div>
-     <div class="mob-menu is-hidden">
-        <div class="mob-menu-container">
-        <button class="close-menu-btn"><svg class="" width="14" height="14">
-            <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-        </button>
-        <button type="button" class="header__button-mob">Buy now
-            <svg class="header__botton-mob-icon" width="4" height="8">
-            <use href="./images/icons.svg#icon-redvector"></use>
-        </svg>
-        </button>
-        <ul class="header__mob-menu-list">
-            <li class="header__mob-menu-item">
-                <a class="header__mob-menu-link current current-acent">
-                    Home</a>
-            </li>
-            <li class="header__mob-menu-item">
-                <a class="header__mob-menu-link link">About us</a>
-            </li>
-            <li class="header__mob-menu-item">
-                <a class="header__mob-menu-link link">How it’s made?</a>
-            </li>
-            <li class="header__mob-menu-item">
-                <a class="header__mob-menu-link link">Our products</a>
-            </li>
-            <li class="header__mob-menu-item">
-                <a class="header__mob-menu-link link">Contact</a>
-            </li>
-        </ul>
-        </div> 
-    </div> 
-    
+
+      </div>
 </header>
+    
