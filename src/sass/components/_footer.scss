@@ -1,16 +1,12 @@
 .footer {
-  padding-top: 50px;
-  padding-bottom: 25px;
-
-  background-color: $background-color;
+  @include section-padding(50px, 25px);
 
   @media screen and (min-width: 768px) {
-    padding-top: 80px;
-    padding-bottom: 20px;
+    @include section-padding(80px, 20px);
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 10px;
+    @include section-padding(80px, 10px);
   }
 }
 
@@ -22,66 +18,26 @@
   border-bottom: 1px solid $review-underline;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
+    @include flex-centered(flex, flex-start, space-between);
 
     padding-bottom: 90px;
   }
 }
 
 .footer__title {
-  font-family: 'Titan One', cursive;
-  font-weight: 400;
-  letter-spacing: 0.04em;
   width: 230px;
 
-  text-transform: uppercase;
-
-  &-first {
-    font-size: 18px;
-    line-height: 1.2;
-
-    color: #ffa5ba;
-  }
-
-  &-second {
-    margin-top: 20px;
-
-    font-size: 34px;
-    line-height: 1.2;
-
-    color: #d41443;
+  & .section__title,
+  & .section__subtitle {
+    text-align: start;
   }
 
   @media screen and (min-width: 768px) {
     width: 340px;
-
-    &-first {
-      font-size: 26px;
-      line-height: 1.2;
-    }
-
-    &-second {
-      margin-top: 15px;
-
-      font-size: 48px;
-      line-height: 1.2;
-      letter-spacing: 0.06em;
-    }
   }
 
   @media screen and (min-width: 1280px) {
     width: 500px;
-
-    &-first {
-      font-size: 30px;
-      line-height: 1.2;
-    }
-
-    &-second {
-      font-size: 58px;
-      line-height: 1.2;
-    }
   }
 }
 
@@ -99,9 +55,7 @@
 }
 
 .social-media__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-centered();
 
   fill: $third-accent-color;
 
@@ -131,7 +85,7 @@
   line-height: 1.9;
   text-align: right;
 
-  color: #000000;
+  color: $main-text-color;
 
   &-link {
     color: $accent-color;
@@ -160,7 +114,7 @@
   line-height: 1.5;
   text-align: center;
 
-  color: #907e82;
+  color: $second-text-color;
 
   @media screen and (min-width: 768px) {
     width: 275px;
