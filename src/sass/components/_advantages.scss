@@ -1,0 +1,118 @@
+.advantages__section {
+  background-color: $background-color;
+  @include section-padding(0, 97px);
+  @media screen and (min-width: 768px) {
+    @include section-padding(0, 140px);
+  }
+}
+
+.advantages {
+  margin-left: 10px;
+  margin-right: 60px;
+  flex-direction: row;
+  padding-top: 39px;
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 66px;
+    padding-top: 66px;
+  }
+  @media screen and (min-width: 1279px) {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 39px;
+  }
+}
+
+.advantages__icon1::before {
+  content: url(../images/advant1.png);
+  position: relative;
+  width: 33px;
+  height: 50px;
+  bottom: 16px;
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    bottom: 36px;
+  }
+  @media screen and (min-width: 1279px) {
+    bottom: 40px;
+  }
+}
+
+.advantages__icon2::before {
+  content: url(../images/advant2.png);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    bottom: 36px;
+  }
+  @media screen and (min-width: 1279px) {
+    bottom: 40px;
+  }
+}
+
+.advantages__icon3::before {
+  content: url(../images/advant3.png);
+  position: relative;
+  width: 44px;
+  height: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    bottom: 36px;
+  }
+  @media screen and (min-width: 1279px) {
+    bottom: 40px;
+  }
+}
+
+.advantages__title {
+  color: $accent-color;
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  padding-bottom: 15px;
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    padding-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1279px) {
+    font-size: 58px;
+    line-height: 1.13;
+  }
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+  color: $main-text-color;
+  letter-spacing: 0.04em;
+  width: 230px;
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  @media screen and (min-width: 1279px) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+}
+
+.advantages__item {
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1279px) {
+    width: 100%;
+  }
+}
+.advantages__item:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    margin-right: 60px;
+  }
+  @media screen and (min-width: 1279px) {
+    margin-right: 30px;
+  }
+}
