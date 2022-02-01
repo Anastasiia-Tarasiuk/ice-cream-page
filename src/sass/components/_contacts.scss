@@ -11,12 +11,12 @@
     }
 }
 
-.card__container {
+.contacts__list {
     margin-bottom: 54px;
     
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: center;
+        justify-content: center;    
         margin-bottom: 81px;
     }
 
@@ -25,7 +25,7 @@
     }
 }
 
-.card {
+.contacts__item {
     border-radius: 24px;
     background: $third-text-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -119,6 +119,30 @@
     }
 }
 
+.card__schedule-list {
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 32px;
+    }
+}
+
+.card__schedule-item {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;      
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;       
+    }
+}
+
 .card__day {
     line-height: 1.86;
 
@@ -131,7 +155,7 @@
     }
 }
 
-.card__schedule {
+.card__time {
     font-size: 12px;
     line-height: 1.86;
     color: $third-accent-color;
@@ -152,17 +176,6 @@
     }
 }
 
-.card__schedule--margin {
-    margin-bottom: 25px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 32px;
-    }
-}
 
 .card__line {
     display: block;
@@ -209,16 +222,14 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+}
 
-    &:first-child {
-        margin-bottom: 10px;
-    }
-    
+.button__list-item {
+    margin-bottom: 10px;
+
     @media screen and (min-width: 768px) {
-        &:first-child {
             margin-bottom: 0;
             margin-right: 15px;
-        }
     }
 }
 
