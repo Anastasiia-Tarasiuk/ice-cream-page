@@ -78,8 +78,7 @@
   position: relative;
   font-weight: 700;
   font-size: 14px;
-  padding: 9px 50px 9px 35px;
-
+ 
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
@@ -128,10 +127,7 @@
 }
 
 .about__svg {
-  position: absolute;
-  top: 50%;
-  right: 15%;
-  transform: translate(-50%, -50%);
+  margin-left: 11px;
 
   fill: currentColor;
   width: 10px;
