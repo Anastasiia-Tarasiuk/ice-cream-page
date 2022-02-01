@@ -36,5 +36,17 @@
     <script src="./js/modal.js"></script>
     <script src="./index.js"></script>
     <script src="./js/menu.js"></script>
+
+    <script>
+        $('a[href^="#"').on('click', function () {
+
+            let href = $(this).attr('href');
+
+            $('html, body').animate({
+              scrollTop: $(href).offset().top
+            });
+            return false;
+          });
+    </script>
   </body>
 </html>
