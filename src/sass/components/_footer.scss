@@ -1,6 +1,23 @@
 .footer {
   @include section-padding(50px, 25px);
 
+  &::after {
+    content: '';
+    position: absolute;
+    margin-top: -65px;
+    width: 100%;
+    height: 1px;
+    background-color: $review-underline;
+
+    @media screen and (min-width: 768px) {
+      margin-top: -55px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: -35px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     @include section-padding(80px, 20px);
   }
@@ -15,7 +32,7 @@
 
   padding-bottom: 45px;
 
-  border-bottom: 1px solid $review-underline;
+  // border-bottom: 1px solid $review-underline;
 
   @media screen and (min-width: 768px) {
     @include flex-centered(flex, flex-start, space-between);

@@ -133,13 +133,11 @@
     }
 }
 
-.hero__button-products, 
-.hero__button-about {
-    position: relative;
-    display: inline-block;
+.hero__button-list {
+    display: flex;
 }
 
-.hero__button-products {
+.hero__button-item {
     margin-right: 8px;
 
     @media screen and (min-width: 1280px) {
@@ -240,7 +238,6 @@
     padding-top: 2px;
     top: 94px;
     right: 34px;
-    // margin-right: -11px;
     
     text-align: right;
 
@@ -260,7 +257,6 @@
 }
 
 .hero__department-number {
-    // position: relative;
 
     font-family: Titan One;
     font-weight: 400;
@@ -270,20 +266,6 @@
     text-transform: uppercase;
 
     color: $accent-color;
-    
-    // &::before {
-    //     content: '';
-        
-    //     position: absolute;
-    //     top: -2px;
-        
-    //     display: block;
-    //     width: 16px;
-    //     height: 16px;
-    //     border-radius: 50%;
-    //     background-color: $third-text-color;
-    //     z-index: 0  ;
-    // }
     
     @media screen and (min-width: 1280px) {
         font-size: 46px;

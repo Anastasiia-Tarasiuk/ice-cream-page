@@ -3,7 +3,7 @@
   @include flex-centered(flex, center, space-between);
 
   padding-top: 6px;
-  position: relative;
+  // position: relative;
   margin-bottom: -56px;
   z-index: 3;
 
@@ -23,6 +23,8 @@
 
 // ---------------------mob-menu-----------------
 .mob-menu {
+  z-index: 1;
+
   @media screen and (max-width: 1279px) {
     display: none;
     position: absolute;
@@ -44,8 +46,8 @@
     @include flex-centered();
 
     margin-left: auto;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 12px;
     
     border: none;
     background-color: transparent;
@@ -53,6 +55,7 @@
     z-index: 5;
 
     @media screen and (min-width: 768px) {
+      
       margin-right: 30px;    
     }
 
@@ -73,9 +76,17 @@
     display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .burger-button.is-open {
+.burger-button.is-open {
     position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 23px;
+    right: 28px;
+
+ 
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 22px;
     top: 14px;
     right: 34px;
     margin-right: 0;
@@ -100,14 +111,11 @@
   }
 }
 
-.header__button-mob {
-  display: none;
 
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-}
 .header__button-mob {
+  z-index: 1;
+
+  display: none;
   width: 208px;
   height: 44px;
   background: $third-text-color;
@@ -115,12 +123,13 @@
   border:none;
   color: $accent-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-
-   @media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: 768px) {
+    display: block;
     width: 160px;
   }
 }
