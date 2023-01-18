@@ -1459,10 +1459,6 @@ button {
   background: linear-gradient(#fff5f6 50%, #ffffff 50%);
 }
 
-.gallery__list {
-  grid-gap: 3px;
-}
-
 .grid-sizer {
   width: 48%;
 }
