@@ -2,18 +2,21 @@ import Masonry from "masonry-layout";
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-window.onload = () => {
-    const grid = document.querySelector(".gallery__list")
+const bodyWidth = document.querySelector('body').offsetWidth;
 
-    const masonry = new Masonry(grid, {
-        columnWidth: ".grid-sizer",
-        gutter: '.gutter-sizer',
-        itemSelector: ".gallery__item",
-        percentPosition: true,
-    })
+const masonryOptions = {
+    columnWidth: ".grid-sizer",
+    gutter: '.gutter-sizer',
+    itemSelector: ".gallery__item",
+    percentPosition: true,
 }
 
-let gallery = new SimpleLightbox('.gallery__list .gallery__item-link', {
-    close: false,
+const masonry = new Masonry(".gallery__list", masonryOptions)
+
+const lightboxOptions = {
+    close: bodyWidth < 768 ? false : true,
+    nav: bodyWidth < 768 ? false : true,
     showCounter: false,
-});
+}
+
+let gallery = new SimpleLightbox('.gallery__item-link', lightboxOptions);
