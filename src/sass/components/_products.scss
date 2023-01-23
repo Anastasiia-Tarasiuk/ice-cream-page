@@ -61,22 +61,12 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 259px;
   }
+  
 }
-
 .products__list {
-  @media screen and(min-width:768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -17px;
-    margin-left: -20px;
-    flex-direction: row;
-    align-items: baseline;
-    margin: -10px;
-  }
-  @media screen and(min-width:1280px) {
-    margin-left: -24px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .products__item {
